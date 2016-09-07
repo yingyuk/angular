@@ -2,7 +2,7 @@
  * @Author: yukyuk
  * @Date:   2016-09-07 00:12:44
  * @Last Modified by:   yukyuk
- * @Last Modified time: 2016-09-07 17:51:05
+ * @Last Modified time: 2016-09-07 18:05:32
  */
 
 'use strict';
@@ -10,10 +10,9 @@ import {
   Component
 } from '@angular/core';
 
-export class Hero {
-  id: number;
-  name: string;
-}
+import {
+  Hero
+} from './hero';
 
 const HEROES: Hero[] =
   [{
@@ -60,14 +59,7 @@ const HEROES: Hero[] =
         <span class="badge">{{hero.id}}</span> {{hero.name}}
       </li>
     </ul>
-    <div *ngIf="selectedHero">
-      <h2>{{selectedHero.name}} details!</h2>
-      <div><label>id: </label>{{selectedHero.id}}</div>
-      <div>
-        <label>name: </label>
-        <input [(ngModel)]="selectedHero.name" placeholder="name"/>
-      </div>
-    </div>
+    <my-hero-detail [hero]="selectedHero"></my-hero-detail>
   `,
   styles: [`
     .selected {
