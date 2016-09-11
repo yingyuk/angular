@@ -2,7 +2,7 @@
 * @Author: yukyuk
 * @Date:   2016-09-07 00:16:46
 * @Last Modified by:   Yuk
-* @Last Modified time: 2016-09-11 23:25:45
+* @Last Modified time: 2016-09-11 23:57:32
 */
 /* Master Styles */
 h1 {
@@ -145,10 +145,3 @@ nav a.active {
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
-
-
-/*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/

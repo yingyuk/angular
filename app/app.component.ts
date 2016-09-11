@@ -2,14 +2,15 @@
 * @Author: Yuk
 * @Date:   2016-09-11 23:14:05
 * @Last Modified by:   Yuk
-* @Last Modified time: 2016-09-11 23:23:07
+* @Last Modified time: 2016-09-11 23:55:10
 */
 
 'use strict';
-import { Component } from '@angular/core';
+import { Component }          from '@angular/core';
 
 @Component({
   selector: 'my-app',
+
   template: `
     <h1>{{title}}</h1>
     <nav>
@@ -18,9 +19,8 @@ import { Component } from '@angular/core';
     </nav>
     <router-outlet></router-outlet>
   `,
-  styleUrls: ['app/app.component.css'],
+  styleUrls: ['app/app.component.css']
 })
 export class AppComponent {
   title = 'Tour of Heroes';
 }
-

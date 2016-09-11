@@ -2,7 +2,7 @@
 * @Author: Yuk
 * @Date:   2016-09-11 23:20:46
 * @Last Modified by:   Yuk
-* @Last Modified time: 2016-09-11 23:26:59
+* @Last Modified time: 2016-09-11 23:56:42
 */
 .selected {
   background-color: #CFD8DC !important;
@@ -62,4 +62,11 @@ button {
 }
 button:hover {
   background-color: #cfd8dc;
+}
+button.delete {
+  float:right;
+  margin-top: 2px;
+  margin-right: .8em;
+  background-color: gray !important;
+  color:white;
 }

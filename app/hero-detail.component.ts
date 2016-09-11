@@ -2,14 +2,14 @@
  * @Author: yukyuk
  * @Date:   2016-09-07 17:56:38
  * @Last Modified by:   Yuk
- * @Last Modified time: 2016-09-11 23:26:50
+ * @Last Modified time: 2016-09-11 23:56:05
  */
 
 'use strict';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 
-import { Hero } from './hero';
+import { Hero }        from './hero';
 import { HeroService } from './hero.service';
 
 @Component({
@@ -31,6 +31,11 @@ export class HeroDetailComponent implements OnInit {
       this.heroService.getHero(id)
         .then(hero => this.hero = hero);
     });
+  }
+
+  save(): void {
+    this.heroService.update(this.hero)
+      .then(this.goBack);
   }
 
   goBack(): void {

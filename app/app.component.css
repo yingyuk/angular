@@ -2,7 +2,7 @@
 * @Author: Yuk
 * @Date:   2016-09-11 23:17:12
 * @Last Modified by:   Yuk
-* @Last Modified time: 2016-09-11 23:22:43
+* @Last Modified time: 2016-09-11 23:55:05
 */
 h1 {
   font-size: 1.2em;
@@ -32,5 +32,3 @@ nav a:hover {
 nav a.active {
   color: #039be5;
 }
-
-
