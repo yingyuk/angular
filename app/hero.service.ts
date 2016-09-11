@@ -1,17 +1,29 @@
 /*
  * @Author: yukyuk
  * @Date:   2016-09-07 18:22:50
- * @Last Modified by:   yukyuk
- * @Last Modified time: 2016-09-07 18:34:12
+ * @Last Modified by:   Yuk
+ * @Last Modified time: 2016-09-11 23:26:54
  */
 
 'use strict';
-import { Injectable } from '@angular/core';
 import { Hero } from './hero';
 import { HEROES } from './mock-heroes';
+import { Injectable } from '@angular/core';
+
 @Injectable()
 export class HeroService {
   getHeroes(): Promise<Hero[]> {
     return Promise.resolve(HEROES);
+  }
+
+  getHeroesSlowly(): Promise<Hero[]> {
+    return new Promise<Hero[]>(resolve =>
+      setTimeout(resolve, 2000)) // delay 2 seconds
+      .then(() => this.getHeroes());
+  }
+
+  getHero(id: number): Promise<Hero> {
+    return this.getHeroes()
+               .then(heroes => heroes.find(hero => hero.id === id));
   }
 }

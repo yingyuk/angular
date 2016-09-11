@@ -1,13 +1,14 @@
 /*
  * @Author: yukyuk
  * @Date:   2016-09-07 18:25:06
- * @Last Modified by:   yukyuk
- * @Last Modified time: 2016-09-07 18:34:33
+ * @Last Modified by:   Yuk
+ * @Last Modified time: 2016-09-11 23:27:14
  */
 
 'use strict';
 import { Hero } from './hero';
-export const HEROES: Hero[] = [
+
+export var HEROES: Hero[] = [
   {id: 11, name: 'Mr. Nice'},
   {id: 12, name: 'Narco'},
   {id: 13, name: 'Bombasto'},
