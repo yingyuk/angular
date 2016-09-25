@@ -1,0 +1,17 @@
+*.idea
+.idea
+.idea/
+node_modules/
+*.tags
+*.tags_sorted_by_file
+upload/
+public/libs/*
+*.py
+.py
+*.map
+.map
+__init__.py
+app/*.js
+typings/
+*.log
+dist/
