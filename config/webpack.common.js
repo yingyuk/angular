@@ -1,8 +1,8 @@
 /*
 * @Author: Yuk¡¤
 * @Date:   2016-09-25 14:00:54
-* @Last Modified by:   Yuk·
-* @Last Modified time: 2016-09-25 14:01:00
+* @Last Modified by:   yukyuk
+* @Last Modified time: 2016-10-07 11:09:14
 */
 
 'use strict';
@@ -37,6 +37,10 @@ module.exports = {
         loader: 'file?name=assets/[name].[hash].[ext]'
       },
       {
+        test: /\.scss/,
+        loader: 'style-loader!css-loader!postcss-loader!sass-loader?outputStyle=expanded'
+      },
+      {
         test: /\.css$/,
         exclude: helpers.root('src', 'app'),
         loader: ExtractTextPlugin.extract('style', 'css?sourceMap')
@@ -57,5 +61,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     })
-  ]
+  ],
+  postcss: function () {
+    return [];
+  },
 };

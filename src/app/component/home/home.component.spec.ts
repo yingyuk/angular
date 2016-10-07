@@ -2,12 +2,12 @@
 * @Author: Yuk¡¤
 * @Date:   2016-09-25 14:14:52
 * @Last Modified by:   Yuk·
-* @Last Modified time: 2016-09-25 14:14:54
+* @Last Modified time: 2016-10-07 11:07:10
 */
 
 'use strict';
 import { TestBed } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import { AppComponent } from '../../app.component';
 describe('App', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({ declarations: [AppComponent]});
